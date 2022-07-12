@@ -6,17 +6,20 @@ $planCard:linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
  
  .programes-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+margin: 0 auto;
     align-items: center;
     padding: 2rem;
     color: #fff;
-    
+    gap: 1.5rem;
     .programes-content{
         height: max-content;
-        width: 500px;
+        max-width: 300px;
+       
         display: flex;
         flex-direction: column;
-        margin-right: 1rem ;
+        
+      
         background-color: gray;
         padding: 2rem;
         gap: 10;

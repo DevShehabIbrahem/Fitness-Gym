@@ -2,26 +2,45 @@ import React from "react";
 import { plansData } from "../../data/plansData";
 import arrow from "../../assets/rightArrow.png";
 import "../../css/Plans/Plans.css";
+import whiteTick from "../../assets/whiteTick.png";
+import { words } from "../../words";
 
 const Plans = () => {
+  const { READY_TO_START, YOUR_JOURNEY, NOW_WITHUS } = words;
   return (
     <div>
-      <div className="programes-box">
+      <div className="plans_head">
+        <span className="stroke-text">{READY_TO_START}</span>
+        <span>{YOUR_JOURNEY}</span>
+        <span className="stroke-text">{NOW_WITHUS}</span>
+      </div>
+      {/*features*/}
+      <div className="plans-box">
         {plansData.map(({ features, name, price, icon }) => (
-          <div className="programes-content">
+          <div className="plans-content">
             {icon}
             <h3>{name}</h3>
-            <span>{price}</span>
-            <p>{features[0]}</p>
-            <p>{features[1]}</p>
-            <p>{features[2]}</p>
+            <span>${price}</span>
+            <p>
+              <img src={whiteTick} alt="" />
+              {features[0]}
+            </p>
+            <p>
+              <img src={whiteTick} alt="" />
+              {features[1]}
+            </p>
+            <p>
+              <img src={whiteTick} alt="" />
+              {features[2]}
+            </p>
 
             <span>
-              Join Now
+              See more benefits
               <span>
                 <img src={arrow} alt="RightArrow" />
               </span>
             </span>
+            <button>Join Now</button>
           </div>
         ))}
       </div>

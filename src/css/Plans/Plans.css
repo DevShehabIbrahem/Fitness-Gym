@@ -1,0 +1,97 @@
+.plans_head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding: 0 2rem;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.plans_head span:nth-child(1) {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.plans_head span:nth-child(3) {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.plans_head .stroke-text {
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+}
+
+.plans-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  gap: 2rem;
+  margin: 0 auto;
+  transition: 0.5s all;
+}
+.plans-box .plans-content {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  padding: 2rem;
+  gap: 10;
+  fill: #fff;
+  transition: 0.5s all ease-in;
+  width: fit-content;
+  height: 28rem;
+}
+.plans-box .plans-content button {
+  color: #f48915;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.plans-box .plans-content span:nth-child(3) {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+.plans-box .plans-content:not(.plans-box .plans-content:nth-child(2)):hover {
+  transform: translateY(-10px);
+}
+.plans-box .plans-content:nth-child(2) {
+  background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  height: 30rem;
+  animation: bruonxe 3s linear infinite;
+}
+@keyframes bruonxe {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.plans-box span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.plans-box span img {
+  width: 1.2rem;
+}
+.plans-box svg {
+  width: 3rem;
+  height: 3rem;
+}
+.plans-box p {
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.plans-box p img {
+  width: 20px;
+}

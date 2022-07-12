@@ -1,40 +1,116 @@
-.programes-box {
+$planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+$--lightgray: #d9d9d9;
+$--gray: #9c9c9c;
+$--orange: #f48915;
+$--darkGrey: #464d53;
+$--caloryCard: #656565;
+$--appColor: #3c3f45;
+
+.plans_head{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2rem;
+    span:nth-child(1){
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    span:nth-child(3){
+      font-style: italic; 
+      font-family: Arial, Helvetica, sans-serif; 
+    }
+    .stroke-text{
+        -webkit-text-stroke-color: #fff;
+        -webkit-text-stroke-width: 1px;
+        color: transparent;
+
+    }
+}
+.plans-box {
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
     color: #fff;
+    gap: 2rem;
+    margin: 0 auto;
+    transition: 0.5s all;
 
-    .programes-content {
-        height: max-content;
-        width: 500px;
+    .plans-content {
+        
+        width: 320px;
         display: flex;
         flex-direction: column;
-        margin-right: 1rem;
         background-color: gray;
         padding: 2rem;
         gap: 10;
         fill: #fff;
         transition: 0.5s all ease-in;
+        width: fit-content;
+        height: 28rem;
 
-        &:hover {
-            background: $planCard;
-            transition: 0.5s all;
+      
+        button {
+            color: $--orange;
+            padding: 10px ;
+            margin-top: 15px;
+            font-size: 1rem;
+            font-weight: 600;
         }
-        span {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            img {
-                width: 1.2rem;
+        span:nth-child(3) {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 1.8rem;
+        }
+    
+        &:not(&:nth-child(2)){
+            &:hover{
+             transform: translateY(-10px);
+            }
+           }
+           
+        &:nth-child(2) {
+            background: $planCard;
+            height: 30rem;
+            animation: bruonxe 3s linear infinite;
+
+            @keyframes bruonxe {
+                0%,100%{  
+                    transform: translateY(0px);         
+                }
+                50%{
+                    transform: translateY(-20px);
+                }
             }
         }
-        svg {
-            width: 3rem;
-            height: 3rem;
+      
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+            width: 1.2rem;
         }
-        p {
-            line-height: 30px;
+    }
+    svg {
+        width: 3rem;
+        height: 3rem;
+    }
+    p {
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        img {
+            width: 20px;
         }
     }
 }

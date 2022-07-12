@@ -4,17 +4,18 @@
 }
 .programs .programes-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin: 0 auto;
   align-items: center;
   padding: 2rem;
   color: #fff;
+  gap: 1.5rem;
 }
 .programs .programes-box .programes-content {
   height: max-content;
-  width: 500px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
-  margin-right: 1rem;
   background-color: gray;
   padding: 2rem;
   gap: 10;
