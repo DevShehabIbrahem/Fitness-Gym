@@ -1,0 +1,183 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .hero_left {
+  padding: 2rem;
+  padding-top: 1.5rem;
+  flex: 3;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.hero .hero_left .hero_fitness {
+  position: relative;
+  margin-top: 4rem;
+  background-color: #363d42;
+  border-radius: 4rem;
+  padding: 20px;
+  width: fit-content;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.hero .hero_left .hero_fitness::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 16px;
+  width: 80px;
+  height: 50px;
+  background-color: #f48915;
+  border-radius: 2rem;
+}
+.hero .hero_left .hero_fitness span {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+.hero .hero_left .hero_heading {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 4.75rem;
+  gap: 1.5rem;
+}
+.hero .hero_left .hero_heading .stroke-text {
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: transparent;
+}
+.hero .hero_left .hero_heading span:nth-child(2) {
+  color: #fff;
+}
+.hero .hero_left p {
+  color: #fff;
+}
+.hero .hero_left .figures {
+  display: flex;
+  gap: 2rem;
+}
+.hero .hero_left .figures div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+}
+.hero .hero_left .figures div span:nth-child(1) {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.hero .hero_left .figures div span:nth-child(2) {
+  color: #9c9c9c;
+}
+.hero .hero_left .buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+.hero .hero_left .buttons button {
+  color: #fff;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  width: 8rem;
+  padding: 6px 0;
+}
+.hero .hero_left .buttons button:nth-child(1) {
+  background-color: #f48915;
+  border: 0;
+}
+.hero .hero_left .buttons button:nth-child(2) {
+  border: 1px solid #f48915;
+  background-color: transparent;
+}
+.hero .hero_right {
+  flex: 1;
+  position: relative;
+  background-color: #f48915;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.hero .hero_right button {
+  width: 6rem;
+  border: 0;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-weight: 600;
+  padding: 11px 0;
+  margin: 50px 50px 0 0;
+}
+.hero .hero_right .heart-rate {
+  position: absolute;
+  right: 3rem;
+  top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #464D53;
+  border-radius: 8px;
+  padding: 0.7rem;
+  width: fit-content;
+}
+.hero .hero_right .heart-rate img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.hero .hero_right .heart-rate span {
+  text-align: center;
+}
+.hero .hero_right .heart-rate span:nth-child(2) {
+  color: #9c9c9c;
+}
+.hero .hero_right .heart-rate span:nth-child(3) {
+  color: #fff;
+  font-size: 2rem;
+}
+.hero .hero_right .heroImage {
+  position: absolute;
+  top: 12rem;
+  right: 8rem;
+  width: 22.7rem;
+  height: 32.7rem;
+  z-index: 2;
+}
+.hero .hero_right .hero_image_back {
+  position: absolute;
+  top: 5rem;
+  right: 19rem;
+  width: 19rem;
+  height: 36.7rem;
+  z-index: 1;
+}
+.hero .hero_right .hero_calories {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  right: 35rem;
+  bottom: 4rem;
+  width: fit-content;
+  background-color: #656565;
+  padding: 12px 1rem;
+}
+.hero .hero_right .hero_calories img {
+  width: 3.7rem;
+  height: 3.7rem;
+}
+.hero .hero_right .hero_calories div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .hero_right .hero_calories div span:nth-child(1) {
+  color: #9c9c9c;
+}
+.hero .hero_right .hero_calories div span:nth-child(2) {
+  color: #fff;
+  font-size: 1.7rem;
+}

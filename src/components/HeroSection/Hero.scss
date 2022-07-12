@@ -1,0 +1,204 @@
+$orange: #f48915;
+$gray: #9c9c9c;
+$darkGrey: #464D53;
+$--gray: #9c9c9c;
+$--caloryCard: #656565;
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+
+    .hero_left {
+        padding: 2rem;
+        padding-top: 1.5rem;
+        flex: 3;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+
+        .hero_fitness {
+            position: relative;
+            margin-top: 4rem;
+            background-color: #363d42;
+            border-radius: 4rem;
+            padding: 20px;
+            width: fit-content;
+            text-transform: uppercase;
+            overflow: hidden;
+
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                top: 5px;
+                left: 16px;
+                width: 80px;
+                height: 50px;
+                background-color: $orange;
+                border-radius: 2rem;
+            }
+            span {
+                color: #fff;
+                z-index: 2;
+                position: relative;
+            }
+        }
+        .hero_heading {
+            display: flex;
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 4.75rem;
+            gap: 1.5rem;
+            .stroke-text {
+                -webkit-text-stroke-color: #fff;
+                -webkit-text-stroke-width: 1px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: transparent;
+            }
+            span:nth-child(2) {
+                color: #fff;
+            }
+        }
+        p {
+            color: #fff;
+        }
+        .figures {
+            display: flex;
+            gap: 2rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                font-size: 1.2rem;
+                span:nth-child(1) {
+                    color: #fff;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+                span:nth-child(2) {
+                    color: $gray;
+                }
+            }
+        }
+        .buttons {
+            display: flex;
+            gap: 1.5rem;
+            button {
+                color: #fff;
+                text-align: center;
+                font-size: 0.95rem;
+                font-weight: 500;
+                width: 8rem;
+                padding: 6px 0;
+            }
+
+            button:nth-child(1) {
+                background-color: $orange;
+                border: 0;
+            }
+            button:nth-child(2) {
+                border: 1px solid $orange;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .hero_right {
+        flex: 1;
+        position: relative;
+        background-color: $orange;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        
+        button{
+            width: 6rem;
+            border: 0;
+            color: #000;
+            background-color: #fff;
+            text-align: center;
+            font-weight: 600;
+            padding: 11px 0;
+            margin: 50px 50px 0 0;
+            
+
+            
+        
+
+        }
+        .heart-rate{
+            position: absolute;
+            right: 3rem;
+            top: 8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background-color: $darkGrey;
+            border-radius: 8px;
+            padding: 0.70rem;
+            width: fit-content;
+            img{
+                width: 2.2rem;
+                height: 2.2rem;
+            }
+            span{
+                text-align: center;
+            }
+            span:nth-child(2){
+         color: $--gray;
+            }
+            span:nth-child(3){
+            color:#fff;
+            font-size: 2rem;
+            }
+
+        }
+        .heroImage{
+            position: absolute;
+            top: 12rem;
+            right: 8rem;
+            width: 22.7rem;
+            height: 32.7rem;
+            z-index: 2;
+        }
+        .hero_image_back{
+            position: absolute;
+            top: 5rem;
+            right: 19rem;
+            width: 19rem;
+            height: 36.7rem;
+            z-index: 1;
+        }
+        .hero_calories{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+                position: absolute;
+                right: 35rem;
+                bottom: 4rem;
+                width: fit-content;
+                background-color: $--caloryCard;
+                padding:12px 1rem;
+                img{
+                    width: 3.7rem;
+                    height: 3.7rem;
+                }
+                div{
+                    display: flex ;
+                    gap:1rem;
+                    align-items: center;
+                   
+                    flex-direction: column;
+                    span:nth-child(1){
+                        color: $--gray;
+                    }
+                    span:nth-child(2){
+                        color: #fff;
+                        font-size: 1.7rem;
+                    }
+                }
+        }
+    }
+
+}

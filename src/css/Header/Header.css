@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header img {
+  width: 10rem;
+  height: 3rem;
+}
+.header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+.header ul li {
+  transition: 0.2s all ease-in-out;
+}
+.header ul li:hover {
+  cursor: pointer;
+  color: #f48915;
+}

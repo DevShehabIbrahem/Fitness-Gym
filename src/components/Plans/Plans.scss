@@ -1,0 +1,40 @@
+.programes-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+
+    .programes-content {
+        height: max-content;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        background-color: gray;
+        padding: 2rem;
+        gap: 10;
+        fill: #fff;
+        transition: 0.5s all ease-in;
+
+        &:hover {
+            background: $planCard;
+            transition: 0.5s all;
+        }
+        span {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img {
+                width: 1.2rem;
+            }
+        }
+        svg {
+            width: 3rem;
+            height: 3rem;
+        }
+        p {
+            line-height: 30px;
+        }
+    }
+}

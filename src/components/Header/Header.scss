@@ -1,0 +1,26 @@
+$orange: #f48915;
+
+.header{
+display: flex;
+justify-content: space-between;
+    img{
+        width: 10rem;
+        height: 3rem;
+        
+    }
+    ul{
+        display: flex; 
+        gap: 30px;
+        list-style: none;
+        color: #fff;
+        text-transform: capitalize;
+        li{
+            transition: 0.2s all ease-in-out;
+            &:hover{
+                cursor: pointer;
+                color: $orange;
+
+            }
+        }
+    }
+}
