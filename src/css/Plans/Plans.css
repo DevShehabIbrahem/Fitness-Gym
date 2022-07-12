@@ -58,6 +58,9 @@
   font-weight: 600;
   margin-bottom: 1.8rem;
 }
+.plans-box .plans-content:not(.plans-box .plans-content:nth-child(2)) {
+  fill: #f48915;
+}
 .plans-box .plans-content:not(.plans-box .plans-content:nth-child(2)):hover {
   transform: translateY(-10px);
 }

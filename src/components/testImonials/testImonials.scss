@@ -1,0 +1,97 @@
+$--lightgray: #d9d9d9;
+$--gray: #9c9c9c;
+$--orange: #f48915;
+$--darkGrey: #464d53;
+$--caloryCard: #656565;
+$--appColor: #3c3f45;
+$--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+
+.testImonials {
+    display: flex;
+
+    padding: 0 3rem;
+    margin-bottom: 10rem;
+
+    .testImonials_left {
+        flex: 1 1;
+
+        .reveiw {
+            p {
+                color: #fff;
+                font-weight: 600;
+                max-width: 900px;
+                font-size: 20px;
+                line-height: 50px;
+            }
+        }
+        span:nth-child(1) {
+            color: $--orange;
+            font-weight: 600;
+        }
+        span:nth-child(3) {
+            color: #fff;
+            font-weight: 600;
+            font-size: 3rem;
+        }
+        h3 {
+            margin: 2.4rem 0;
+            -webkit-text-stroke-color: #fff;
+            -webkit-text-stroke-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: transparent;
+            font-size: 3.4rem;
+        }
+        .testImonials_coatch {
+            font-weight: 600;
+            font-size: 1.1rem;
+            span:nth-child(2) {
+                color: #fff;
+            }
+        }
+    }
+    .testImonials_right {
+        position: relative;
+
+        div:nth-child(1) {
+            position: absolute;
+            background-color: initial;
+            border: 2px solid orange;
+            background-color: transparent;
+            width: 20rem;
+            height: 20rem;
+            right: 9rem;
+            top: 0.9rem;
+        }
+        div:nth-child(2) {
+            position: absolute;
+            background-color: initial;
+            background: $--planCard;
+            width: 20rem;
+            height: 20rem;
+            right: 6rem;
+            top: 2.9rem;
+        }
+
+        .testImonials_slide {
+            position: absolute;
+            width: 20rem;
+            height: 20rem;
+            object-fit: cover;
+            right: 8rem;
+            top: 2rem;
+        }
+
+        .testImonials_arrows {
+            bottom: 1rem;
+            display: flex;
+            gap: 1rem;
+            right: 35rem;
+            position: absolute;
+
+            img {
+                width: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
