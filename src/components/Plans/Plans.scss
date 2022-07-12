@@ -70,6 +70,9 @@ $--appColor: #3c3f45;
         }
     
         &:not(&:nth-child(2)){
+            
+                fill: $--orange;
+            
             &:hover{
              transform: translateY(-10px);
             }
