@@ -4,6 +4,7 @@ import Plans from "../Plans/Plans";
 import Programs from "../Programs/Programs";
 import Reasons from "../Reasons/Reasons";
 import TestImonials from "../../components/testImonials/TestImonials";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Reasons />
       <Plans />
       <TestImonials />
+      <Footer />
     </>
   );
 };
