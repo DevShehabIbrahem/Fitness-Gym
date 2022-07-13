@@ -1,0 +1,57 @@
+.cover {
+  background-image: url("../../assets/coverGym.jpg");
+  width: 100%;
+  height: 23rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  position: relative;
+}
+.cover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.cover .cover_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+.cover .cover_content span:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  max-width: 600px;
+  line-height: 50px;
+}
+.cover .cover_content span:nth-child(1) span:nth-child(1) {
+  color: #f48915;
+}
+.cover .cover_content span:nth-child(2) {
+  background-color: #f48915;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  gap: 1rem;
+  border-radius: 17rem;
+}
+.cover .cover_content span:nth-child(2) img {
+  width: 20px;
+}
+.cover .cover_content > * {
+  z-index: 100;
+  position: relative;
+}
