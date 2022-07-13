@@ -1,0 +1,77 @@
+$--lightgray: #d9d9d9;
+$--gray: #9c9c9c;
+$--orange: #f48915;
+$--darkGrey: #464d53;
+$--caloryCard: #656565;
+$--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+$--appColor: #3c3f45;
+.cover{
+    background-image: url("../../assets/coverGym.jpg");
+    width: 100%;
+    height: 23rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    position: relative;
+   
+  
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background:rgba(0,0,0,0.6);
+        overflow: hidden;
+
+    }
+    .cover_content{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 3rem;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+        span:nth-child(1){
+            font-size: 2rem;
+            font-weight: 500;
+            color: #fff;
+            max-width: 600px;
+            line-height: 50px;
+            span:nth-child(1){
+                color: $--orange;
+
+            }
+         
+        }
+      span:nth-child(2){
+background-color: $--orange;
+color: white;
+font-weight: 600;
+display: flex;
+cursor: pointer;
+
+align-items: center;
+
+padding:  0.8rem 1rem;
+gap: 1rem;
+border-radius: 17rem;
+
+
+img{
+    width: 20px;
+}
+      }
+      
+        &>*{
+            z-index: 100;
+           
+            position: relative;
+        }
+        
+    }
+}

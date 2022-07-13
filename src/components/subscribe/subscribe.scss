@@ -1,0 +1,85 @@
+$--lightgray: #d9d9d9;
+$--gray: #9c9c9c;
+$--orange: #f48915;
+$--darkGrey: #464d53;
+$--caloryCard: #656565;
+$--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+$--appColor: #3c3f45;
+
+.subscribe {
+  display: flex;
+  gap: 10rem;
+  .subscribe-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    padding: 2rem;
+  }
+  .subscribe-left{
+    position: relative;
+    hr{
+      position: absolute;
+      width: 10.5rem;
+      top: 0;
+      border: 2px solid $--orange;
+      border-radius: 20%;
+      
+    }
+    div:nth-child(2) {
+      .stroke-text {
+        -webkit-text-stroke-color: #fff;
+        -webkit-text-stroke-width: 1px;
+        margin-right: 25px;
+  
+        color: transparent;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+    div:nth-child(3) {
+      .stroke-text {
+        -webkit-text-stroke-color: #fff;
+        -webkit-text-stroke-width: 1px;
+        margin-left: 25px;
+  
+        color: transparent;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+  .subscribe-right{
+    display: flex;
+    align-items: center;
+    .subscribe-content{
+      background-color: gray;
+      width: max-content;
+      display: flex;
+      align-items: center;
+      padding: 1.5rem;
+
+      button{
+        width: 6rem;
+        border: 0;
+        color:$--lightgray;
+        background-color: $--orange;
+        text-align: center;
+        font-weight: 500;
+        padding: 11px 0;
+        cursor: pointer;
+    }
+    input{
+      background-color: transparent;
+      border: none;
+      color: #000;
+      outline: none;
+      &::placeholder{
+        color:$--lightgray;
+                font-size: 15px;
+        font-weight: 500;
+      }
+    }
+    }
+  }
+}
