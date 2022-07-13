@@ -5,6 +5,7 @@ import Programs from "../Programs/Programs";
 import Reasons from "../Reasons/Reasons";
 import TestImonials from "../../components/testImonials/TestImonials";
 import Footer from "../Footer/Footer";
+import CoverSection from "../CoverSectiion/CoverSection";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Reasons />
       <Plans />
       <TestImonials />
+      <CoverSection />
       <Footer />
     </>
   );
