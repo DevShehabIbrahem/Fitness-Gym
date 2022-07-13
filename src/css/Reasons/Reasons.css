@@ -46,6 +46,7 @@
   -webkit-text-stroke-width: 1px;
   color: transparent;
   font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .Reasons .Reasons_right .Reasons_tick {
   display: flex;

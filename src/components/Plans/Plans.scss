@@ -31,7 +31,23 @@ $--appColor: #3c3f45;
         color: transparent;
 
     }
+    
 }
+
+.hero-blur-left{
+    width: 22rem;
+    height: 30rem;
+    left: 10rem;
+    
+}
+.hero-blur-right{
+    width: 22rem;
+    height: 30rem;
+    right: 10rem;
+    background-color: #fa5042;
+    
+}
+
 .plans-box {
     display: flex;
     justify-content: center;
@@ -42,6 +58,7 @@ $--appColor: #3c3f45;
     margin: 0 auto;
     transition: 0.5s all;
 
+   
     .plans-content {
         
         width: 320px;

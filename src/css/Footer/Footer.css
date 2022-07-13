@@ -1,3 +1,17 @@
+footer {
+  position: relative;
+}
+footer .hero-blur-left {
+  width: 22rem;
+  height: 30rem;
+  left: 10rem;
+}
+footer .hero-blur-right {
+  width: 22rem;
+  height: 30rem;
+  right: 10rem;
+  background-color: #fa5042;
+}
 footer .footer-content {
   display: grid;
   grid-template-columns: auto auto auto;

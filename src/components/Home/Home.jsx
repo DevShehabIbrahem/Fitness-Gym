@@ -6,10 +6,11 @@ import Reasons from "../Reasons/Reasons";
 import TestImonials from "../../components/testImonials/TestImonials";
 import Footer from "../Footer/Footer";
 import CoverSection from "../CoverSectiion/CoverSection";
+import "../../css/Home/Home.css";
 
 const Home = () => {
   return (
-    <>
+    <div className="home">
       <HeroSection />
       <Programs />
       <Reasons />
@@ -17,7 +18,7 @@ const Home = () => {
       <TestImonials />
       <CoverSection />
       <Footer />
-    </>
+    </div>
   );
 };
 

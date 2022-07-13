@@ -8,6 +8,9 @@ const Footer = () => {
   return (
     <>
       <footer>
+        {/*bulr*/}
+        <div className="blur hero-blur-left"></div>
+        <div className="blur hero-blur-right"></div>
         <div className="footer-content">
           {/*footer-address*/}
           <div className="footer-address">

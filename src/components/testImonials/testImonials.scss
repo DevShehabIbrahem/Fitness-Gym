@@ -10,7 +10,6 @@ $--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
     display: flex;
 
     padding: 0 3rem;
-    margin-bottom: 10rem;
 
     .testImonials_left {
         flex: 1 1;
@@ -40,6 +39,7 @@ $--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
             font-family: Arial, Helvetica, sans-serif;
             color: transparent;
             font-size: 3.4rem;
+            font-style: italic;
         }
         .testImonials_coatch {
             font-weight: 600;
@@ -71,7 +71,6 @@ $--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
             right: 6rem;
             top: 2.9rem;
         }
-
         .testImonials_slide {
             position: absolute;
             width: 20rem;
@@ -79,6 +78,8 @@ $--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
             object-fit: cover;
             right: 8rem;
             top: 2rem;
+            
+                   
         }
 
         .testImonials_arrows {
@@ -87,11 +88,13 @@ $--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
             gap: 1rem;
             right: 35rem;
             position: absolute;
-
+            
+    
             img {
                 width: 20px;
                 cursor: pointer;
             }
         }
+
     }
 }

@@ -24,6 +24,19 @@
   color: transparent;
 }
 
+.hero-blur-left {
+  width: 22rem;
+  height: 30rem;
+  left: 10rem;
+}
+
+.hero-blur-right {
+  width: 22rem;
+  height: 30rem;
+  right: 10rem;
+  background-color: #fa5042;
+}
+
 .plans-box {
   display: flex;
   justify-content: center;

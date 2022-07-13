@@ -14,6 +14,11 @@ const Plans = () => {
         <span>{YOUR_JOURNEY}</span>
         <span className="stroke-text">{NOW_WITHUS}</span>
       </div>
+
+      {/*bulr*/}
+      <div className="blur hero-blur-left"></div>
+      <div className="blur hero-blur-right"></div>
+
       {/*features*/}
       <div className="plans-box">
         {plansData.map(({ features, name, price, icon }) => (

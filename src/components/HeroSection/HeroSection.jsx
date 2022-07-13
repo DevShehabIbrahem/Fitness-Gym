@@ -5,6 +5,7 @@ import { words } from "../../words";
 import Header from "../Header/Header";
 
 import { RightSideImages } from "../../assets/Images";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   const {
@@ -21,14 +22,21 @@ const HeroSection = () => {
     kcal,
   } = words;
 
+  const transition = { type: "spring", duration: 3 };
   return (
     <div className="hero">
+      <div className="blur hero-blur"></div>
       <div className="hero_left">
         {/* Logo And NavBar*/}
         <Header />
 
         {/* The best Fitness*/}
         <div className="hero_fitness">
+          <motion.div
+            initial={{ left: "238px" }}
+            whileInView={{ left: "8px" }}
+            transition={{ ...transition, type: "tween" }}
+          ></motion.div>
           <span>{best_fitness}</span>
         </div>
 
@@ -61,11 +69,16 @@ const HeroSection = () => {
         <button>{btn_join}</button>
 
         {/*heart-Rate*/}
-        <div className="heart-rate">
+        <motion.div
+          initial={{ right: "-3rem" }}
+          whileInView={{ right: "3rem" }}
+          transition={transition}
+          className="heart-rate"
+        >
           <img src={RightSideImages.heart} alt="heart" />
           <span>{heart_rate}</span>
           <span>{haert_num}</span>
-        </div>
+        </motion.div>
 
         {/*hero-images*/}
         <img
@@ -73,18 +86,28 @@ const HeroSection = () => {
           alt="heroImage"
           className="heroImage"
         />
-        <img
+
+        <motion.img
+          initial={{ right: "12rem" }}
+          whileInView={{ right: "20rem" }}
+          transition={transition}
           src={RightSideImages.ero_image_back}
           alt="ero_image_back"
           className="hero_image_back"
         />
-        <div className="hero_calories">
+
+        <motion.div
+          initial={{ right: "15rem" }}
+          whileInView={{ right: "35rem" }}
+          transition={transition}
+          className="hero_calories"
+        >
           <img src={RightSideImages.calories} alt="" />
           <div>
             <span>{Calories}</span>
             <span>{kcal}</span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
