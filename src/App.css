@@ -25,7 +25,9 @@
 .blur{
   background: rgba(253,120,43,1);
   position: absolute;
+
   filter: blur(212px);
   z-index: -9;
+ 
 
 }

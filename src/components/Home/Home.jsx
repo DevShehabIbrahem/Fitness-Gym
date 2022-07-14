@@ -6,6 +6,7 @@ import Reasons from "../Reasons/Reasons";
 import TestImonials from "../../components/testImonials/TestImonials";
 import Footer from "../Footer/Footer";
 import CoverSection from "../CoverSectiion/CoverSection";
+import Subscribe from "../subscribe/Subscribe";
 import "../../css/Home/Home.css";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Reasons />
       <Plans />
       <TestImonials />
+      <Subscribe />
       <CoverSection />
       <Footer />
     </div>

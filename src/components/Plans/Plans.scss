@@ -8,6 +8,7 @@ $--appColor: #3c3f45;
 
 .plans_head{
     display: flex;
+    
     align-items: center;
     justify-content: center;
     gap: 6rem;
@@ -55,13 +56,14 @@ $--appColor: #3c3f45;
     padding: 2rem;
     color: #fff;
     gap: 2rem;
+   
     margin: 0 auto;
     transition: 0.5s all;
 
    
     .plans-content {
         
-        width: 320px;
+        
         display: flex;
         flex-direction: column;
         background-color: gray;
@@ -70,7 +72,7 @@ $--appColor: #3c3f45;
         fill: #fff;
         transition: 0.5s all ease-in;
         width: fit-content;
-        height: 28rem;
+        height: max-content;
 
       
         button {
@@ -97,7 +99,7 @@ $--appColor: #3c3f45;
            
         &:nth-child(2) {
             background: $planCard;
-            height: 30rem;
+            height:max-content;
             animation: bruonxe 3s linear infinite;
 
             @keyframes bruonxe {
@@ -133,4 +135,30 @@ $--appColor: #3c3f45;
             width: 20px;
         }
     }
+}
+@media screen and (max-width: 768px) {
+    .plans_head{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.6rem;
+        
+        
+        
+    }
+    
+    .hero-blur-left{
+        display: none;
+       
+        
+    }
+    
+    
+    .plans-box {
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+       
 }

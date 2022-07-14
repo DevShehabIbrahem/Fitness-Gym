@@ -1,210 +1,300 @@
 $orange: #f48915;
 $gray: #9c9c9c;
-$darkGrey: #464D53;
+$darkGrey: #464d53;
 $--gray: #9c9c9c;
 $--caloryCard: #656565;
 
-
 .hero {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    .hero-blur{
-        width: 22rem;
-        height: 30rem;
-        left: 0;
+  .hero-blur {
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+  }
+  .hero_left {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    .hero_fitness {
+      position: relative;
+      margin-top: 4rem;
+      background-color: #363d42;
+      border-radius: 4rem;
+      padding: 20px;
+      width: fit-content;
+      text-transform: uppercase;
+      overflow: hidden;
+
+      div {
+        position: absolute;
+        z-index: 1;
+        top: 5px;
+        left: 16px;
+        width: 80px;
+        height: 50px;
+        background-color: $orange;
+        border-radius: 2rem;
+      }
+      span {
+        color: #fff;
+        z-index: 2;
+        position: relative;
+      }
+    }
+    .hero_heading {
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      font-size: 4.75rem;
+      gap: 1.5rem;
+      .stroke-text {
+        -webkit-text-stroke-color: #fff;
+        -webkit-text-stroke-width: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: transparent;
+      }
+      span:nth-child(2) {
+        color: #fff;
+      }
+    }
+    p {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+    .figures {
+      display: flex;
+      gap: 2rem;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        font-size: 1.2rem;
+        span:nth-child(1) {
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+        span:nth-child(2) {
+          color: $gray;
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      gap: 1.5rem;
+      button {
+        color: #fff;
+        text-align: center;
+        font-size: 0.95rem;
+        font-weight: 500;
+        width: 8rem;
+        padding: 6px 0;
+      }
+
+      button:nth-child(1) {
+        background-color: $orange;
+        border: 0;
+      }
+      button:nth-child(2) {
+        border: 1px solid $orange;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .hero_right {
+    flex: 1;
+    position: relative;
+    background-color: $orange;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    button {
+      width: 6rem;
+      border: 0;
+      color: #000;
+      background-color: #fff;
+      text-align: center;
+      font-weight: 600;
+      padding: 11px 0;
+      margin: 50px 50px 0 0;
+    }
+    .heart-rate {
+      position: absolute;
+      right: 3rem;
+      top: 8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: $darkGrey;
+      border-radius: 8px;
+      padding: 0.7rem;
+      width: fit-content;
+      img {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
+      span {
+        text-align: center;
+      }
+      span:nth-child(2) {
+        color: $--gray;
+      }
+      span:nth-child(3) {
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+    .heroImage {
+      position: absolute;
+      top: 12rem;
+      right: 8rem;
+      width: 22.7rem;
+      height: 32.7rem;
+      z-index: 2;
+    }
+    .hero_image_back {
+      position: absolute;
+      top: 5rem;
+      right: 19rem;
+      width: 19rem;
+      height: 36.7rem;
+      z-index: 1;
+    }
+    .hero_calories {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      position: absolute;
+      right: 35rem;
+      bottom: 4rem;
+      width: fit-content;
+      background-color: $--caloryCard;
+      padding: 12px 1rem;
+      img {
+        width: 3.7rem;
+        height: 3.7rem;
+      }
+      div {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        flex-direction: column;
+        span:nth-child(1) {
+          color: $--gray;
+        }
+        span:nth-child(2) {
+          color: #fff;
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    transform: scale(0.9);
+    .hero_right {
+      background: none;
+      button {
+      margin: 0;
+      }
+      .heart-rate {
+        position: absolute;
+        left: 1rem;
+        top: 10rem;
+       
+        gap: 1rem;
+       font-size: 1rem;
+        padding: 0.7rem;
+        width: fit-content;
+        img {
+          width: 2.2rem;
+          height: 2.2rem;
+        }
+        span {
+          text-align: center;
+          
+        }
         
+        span:nth-child(3) {
+          font-size: 1.5rem;
+        }
+      }
+      .heroImage {
+        top: 1.8rem;
+        right:0.1rem;
+        width: 15.7rem;
+        height: 18.7rem;
+      }
+      .hero_image_back {
+        position: absolute;
+        top: 0rem;
+        left: 1rem;
+        width: 10rem;
+        height: 20rem;
+        z-index: -9;
+      }
+      .hero_calories {
+        left: 2rem;
+        top: 21rem;
+        bottom: -24rem;
+        z-index: 2;
+       
+      
+      }
+    }
+    .hero-blur {
+      width: 14rem;
     }
     .hero_left {
-        padding: 2rem;
-        padding-top: 1.5rem;
-        flex: 3;
-        display: flex;
-        gap: 2rem;
-        flex-direction: column;
+      .hero_fitness {
+        margin-top: 0;
+        align-self: center;
+        padding: 18px;
+        font-size: small;
+        transform: scale(0.8);
+        div {
+          height: 42px;
+        }
+      }
+      .figures {
+        div {
+          align-items: center;
+          font-size: small;
+          text-align: center;
 
-        .hero_fitness {
-            position: relative;
-            margin-top: 4rem;
-            background-color: #363d42;
-            border-radius: 4rem;
-            padding: 20px;
-            width: fit-content;
-            text-transform: uppercase;
-            overflow: hidden;
-
-           div {
-               
-                position: absolute;
-                z-index: 1;
-                top: 5px;
-                left: 16px;
-                width: 80px;
-                height: 50px;
-                background-color: $orange;
-                border-radius: 2rem;
-            }
-            span {
-                color: #fff;
-                z-index: 2;
-                position: relative;
-            }
+          span:nth-child(1) {
+            font-size: 1.6rem;
+          }
         }
-        .hero_heading {
-            display: flex;
-            flex-direction: column;
-            font-weight: 700;
-            font-size: 4.75rem;
-            gap: 1.5rem;
-            .stroke-text {
-                -webkit-text-stroke-color: #fff;
-                -webkit-text-stroke-width: 1px;
-                font-family: Arial, Helvetica, sans-serif;
-                color: transparent;
-            }
-            span:nth-child(2) {
-                color: #fff;
-            }
-        }
-        p {
-            color: #fff;
-        }
-        .figures {
-            display: flex;
-            gap: 2rem;
-            div {
-                display: flex;
-                flex-direction: column;
-                gap: 0.8rem;
-                font-size: 1.2rem;
-                span:nth-child(1) {
-                    color: #fff;
-                    font-size: 1.8rem;
-                    font-weight: 600;
-                }
-                span:nth-child(2) {
-                    color: $gray;
-                }
-            }
-        }
-        .buttons {
-            display: flex;
-            gap: 1.5rem;
-            button {
-                color: #fff;
-                text-align: center;
-                font-size: 0.95rem;
-                font-weight: 500;
-                width: 8rem;
-                padding: 6px 0;
-            }
-
-            button:nth-child(1) {
-                background-color: $orange;
-                border: 0;
-            }
-            button:nth-child(2) {
-                border: 1px solid $orange;
-                background-color: transparent;
-            }
-        }
+      }
+      .buttons {
+        justify-content: center;
+      }
     }
+    .hero_heading {
+      justify-content: center;
+      align-items: center;
+      span {
+        font-size: 2rem;
+      }
 
-    .hero_right {
-        flex: 1;
-        position: relative;
-        background-color: $orange;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        
-        button{
-            width: 6rem;
-            border: 0;
-            color: #000;
-            background-color: #fff;
-            text-align: center;
-            font-weight: 600;
-            padding: 11px 0;
-            margin: 50px 50px 0 0;
-            
-
-            
-        
-
-        }
-        .heart-rate{
-            position: absolute;
-            right: 3rem;
-            top: 8rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            background-color: $darkGrey;
-            border-radius: 8px;
-            padding: 0.70rem;
-            width: fit-content;
-            img{
-                width: 2.2rem;
-                height: 2.2rem;
-            }
-            span{
-                text-align: center;
-            }
-            span:nth-child(2){
-         color: $--gray;
-            }
-            span:nth-child(3){
-            color:#fff;
-            font-size: 2rem;
-            }
-
-        }
-        .heroImage{
-            position: absolute;
-            top: 12rem;
-            right: 8rem;
-            width: 22.7rem;
-            height: 32.7rem;
-            z-index: 2;
-        }
-        .hero_image_back{
-            position: absolute;
-            top: 5rem;
-            right: 19rem;
-            width: 19rem;
-            height: 36.7rem;
-            z-index: 1;
-        }
-        .hero_calories{
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-                position: absolute;
-                right: 35rem;
-                bottom: 4rem;
-                width: fit-content;
-                background-color: $--caloryCard;
-                padding:12px 1rem;
-                img{
-                    width: 3.7rem;
-                    height: 3.7rem;
-                }
-                div{
-                    display: flex ;
-                    gap:1rem;
-                    align-items: center;
-                   
-                    flex-direction: column;
-                    span:nth-child(1){
-                        color: $--gray;
-                    }
-                    span:nth-child(2){
-                        color: #fff;
-                        font-size: 1.7rem;
-                    }
-                }
-        }
+      p {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+      }
     }
-
+  }
 }

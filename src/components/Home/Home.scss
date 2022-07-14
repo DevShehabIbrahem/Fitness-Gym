@@ -1,6 +1,9 @@
 .home{
     display: flex;
     flex-direction: column;
-    gap: 13rem;
+    gap: 10rem;
     
+    @media screen and (max-width:768px) {
+        gap: 6rem;
+    }
 }

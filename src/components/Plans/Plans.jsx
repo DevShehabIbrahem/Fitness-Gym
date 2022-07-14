@@ -23,7 +23,7 @@ const Plans = () => {
       <div className="plans-box">
         {plansData.map(({ features, name, price, icon }) => (
           <div className="plans-content">
-            {icon}
+            <span>{icon}</span>
             <h3>{name}</h3>
             <span>${price}</span>
             <p>
@@ -38,7 +38,6 @@ const Plans = () => {
               <img src={whiteTick} alt="" />
               {features[2]}
             </p>
-
             <span>
               See more benefits
               <span>

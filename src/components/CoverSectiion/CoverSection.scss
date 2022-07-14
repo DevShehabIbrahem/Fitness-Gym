@@ -5,6 +5,7 @@ $--darkGrey: #464d53;
 $--caloryCard: #656565;
 $--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
 $--appColor: #3c3f45;
+
 .cover{
     background-image: url("../../assets/coverGym.jpg");
     width: 100%;
@@ -30,8 +31,8 @@ $--appColor: #3c3f45;
     }
     .cover_content{
         display: flex;
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
     
     gap: 3rem;
     overflow: hidden;
@@ -76,4 +77,12 @@ img{
         }
         
     }
+}
+@media screen and (max-width: 768px) {
+   .cover{
+
+       margin-bottom: 0rem;
+       
+   }
+
 }

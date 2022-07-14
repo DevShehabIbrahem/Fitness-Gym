@@ -67,3 +67,18 @@
   font-size: 15px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .subscribe .subscribe-left {
+    font-size: 2rem;
+  }
+  .subscribe .subscribe-left hr {
+    display: none;
+  }
+}

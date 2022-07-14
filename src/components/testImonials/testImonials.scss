@@ -78,23 +78,94 @@ $--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
             object-fit: cover;
             right: 8rem;
             top: 2rem;
-            
-                   
         }
 
         .testImonials_arrows {
-            bottom: 1rem;
+            bottom: -20rem;
             display: flex;
             gap: 1rem;
             right: 35rem;
             position: absolute;
-            
-    
+
             img {
                 width: 20px;
                 cursor: pointer;
             }
         }
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .testImonials {
+        flex-direction: column;
+        .testImonials_right {
+            position: relative;
+            left: 7rem;
+          
+            z-index: 10001;
+         transform: scale(0.8);
+            margin-bottom: 13rem;
+            margin-top: 2rem;
+           
+        }
+        .testImonials_arrows {
+            bottom: -26rem !important;
+            display: block;
+            left: -2rem;
+        }
+        .testImonials_left {
+            .reveiw {
+                p {
+                    font-size: small;
+                    line-height: 40px;
+                }
+            }
+            span:nth-child(1) {
+                font-weight: 500;
+                font-size: medium;
+            }
+            span:nth-child(3) {
+                font-size: small;
+            }
+            h3 {
+                margin: 1.4rem 0;
+
+                font-size: 2.4rem;
+            }
+            .testImonials_coatch {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .testImonials {
+        .testImonials_right {
+           
+        
+            margin-bottom: 13rem;
+            
+           
+        }
+        
+        .testImonials_left {
+            .reveiw {
+                p {
+                 width: 30rem;
+                line-height: 40px;
+                }
+            }
+           
+              
+           
+            h3 {
+                margin: 1.4rem 0;
+
+                font-size: 2.4rem;
+            }
+            .testImonials_coatch {
+                font-size: 1.2rem;
+            }
+        }
     }
 }

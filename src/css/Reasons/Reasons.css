@@ -71,3 +71,36 @@
   display: flex;
   gap: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .Reasons {
+    flex-direction: column;
+    padding: 0 1rem;
+    transform: scale(0.9);
+  }
+  .Reasons .Reasons_left {
+    flex: 1 1;
+    display: grid;
+  }
+  .Reasons .Reasons_left > :nth-child(1) {
+    width: auto;
+    height: 21rem;
+  }
+  .Reasons .Reasons_left > :nth-child(2) {
+    width: 14rem;
+    height: 14rem;
+  }
+  .Reasons .Reasons_left > :nth-child(3) {
+    width: auto;
+    height: 6rem;
+  }
+  .Reasons .Reasons_left > :nth-child(4) {
+    width: auto;
+    height: 6rem;
+  }
+  .Reasons .Reasons_right h1 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 20px 0;
+  }
+}

@@ -58,6 +58,7 @@
 }
 .hero .hero_left p {
   color: #fff;
+  font-size: 1.5rem;
 }
 .hero .hero_left .figures {
   display: flex;
@@ -122,7 +123,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background-color: #464D53;
+  background-color: #464d53;
   border-radius: 8px;
   padding: 0.7rem;
   width: fit-content;
@@ -184,4 +185,93 @@
 .hero .hero_right .hero_calories div span:nth-child(2) {
   color: #fff;
   font-size: 1.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    transform: scale(0.9);
+  }
+  .hero .hero_right {
+    background: none;
+  }
+  .hero .hero_right button {
+    margin: 0;
+  }
+  .hero .hero_right .heart-rate {
+    position: absolute;
+    left: 1rem;
+    top: 10rem;
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 0.7rem;
+    width: fit-content;
+  }
+  .hero .hero_right .heart-rate img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .hero .hero_right .heart-rate span {
+    text-align: center;
+  }
+  .hero .hero_right .heart-rate span:nth-child(3) {
+    font-size: 1.5rem;
+  }
+  .hero .hero_right .heroImage {
+    top: 1.8rem;
+    right: 0.1rem;
+    width: 15.7rem;
+    height: 18.7rem;
+  }
+  .hero .hero_right .hero_image_back {
+    position: absolute;
+    top: 0rem;
+    left: 1rem;
+    width: 10rem;
+    height: 20rem;
+    z-index: -9;
+  }
+  .hero .hero_right .hero_calories {
+    left: 2rem;
+    top: 21rem;
+    bottom: -24rem;
+    z-index: 2;
+  }
+  .hero .hero-blur {
+    width: 14rem;
+  }
+  .hero .hero_left .hero_fitness {
+    margin-top: 0;
+    align-self: center;
+    padding: 18px;
+    font-size: small;
+    transform: scale(0.8);
+  }
+  .hero .hero_left .hero_fitness div {
+    height: 42px;
+  }
+  .hero .hero_left .figures div {
+    align-items: center;
+    font-size: small;
+    text-align: center;
+  }
+  .hero .hero_left .figures div span:nth-child(1) {
+    font-size: 1.6rem;
+  }
+  .hero .hero_left .buttons {
+    justify-content: center;
+  }
+  .hero .hero_heading {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .hero_heading span {
+    font-size: 2rem;
+  }
+  .hero .hero_heading p {
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+  }
 }

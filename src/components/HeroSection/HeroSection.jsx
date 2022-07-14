@@ -46,8 +46,8 @@ const HeroSection = () => {
             <span className="stroke-text">{SHAPE}</span> <span>YOUR</span>
           </span>
           <span> {IDEAL_body}</span>
+          <p>{shape_dec}</p>
         </div>
-        <p>{shape_dec}</p>
 
         {/*figures*/}
         <div className="figures">
@@ -92,7 +92,7 @@ const HeroSection = () => {
           whileInView={{ right: "20rem" }}
           transition={transition}
           src={RightSideImages.ero_image_back}
-          alt="ero_image_back"
+          alt="hero_image_back"
           className="hero_image_back"
         />
 

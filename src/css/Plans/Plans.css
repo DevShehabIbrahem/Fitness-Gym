@@ -48,7 +48,6 @@
   transition: 0.5s all;
 }
 .plans-box .plans-content {
-  width: 320px;
   display: flex;
   flex-direction: column;
   background-color: gray;
@@ -57,7 +56,7 @@
   fill: #fff;
   transition: 0.5s all ease-in;
   width: fit-content;
-  height: 28rem;
+  height: max-content;
 }
 .plans-box .plans-content button {
   color: #f48915;
@@ -79,7 +78,7 @@
 }
 .plans-box .plans-content:nth-child(2) {
   background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
-  height: 30rem;
+  height: max-content;
   animation: bruonxe 3s linear infinite;
 }
 @keyframes bruonxe {
@@ -110,4 +109,20 @@
 }
 .plans-box p img {
   width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .plans_head {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.6rem;
+  }
+  .hero-blur-left {
+    display: none;
+  }
+  .plans-box {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -66,3 +66,20 @@
   color: transparent;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .programs_header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    gap: 1rem !important;
+  }
+  .programs_header span {
+    font-size: 2rem !important;
+    z-index: 100;
+  }
+  .programes-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
