@@ -7,7 +7,7 @@
     display: flex;
     height: 100vh;
     flex-direction: column;
-    align-items: center;
+   
     position: absolute;
     width: 100%;
     top: -2rem;
@@ -19,23 +19,27 @@
     list-style: none;
     margin: 0;
     z-index: 100;
-    a{
+    li{
+        width: max-content;
+        padding: 5px;
+        text-transform: capitalize;
+        color: rgb(90, 89, 89);
+        transition: .4s all ease-in-out;
+        margin-left: 2rem;
         margin-bottom: 1.5rem;
         border-bottom: 1px solid rgba(128, 128, 128, 0.345);
         width: 100%;
-        text-decoration: none;
-        li{
-            width: max-content;
-            padding: 5px;
-            text-transform: capitalize;
-            color: rgb(90, 89, 89);
-            transition: .4s all ease-in-out;
-            margin-left: 2rem;
-            &:hover{
-                color: #fbb403;
-            }
+
+        &:hover{
+            color: #fbb403;
+        }
+        a{
+           
+            text-decoration: none;
+            
         }
     }
+   
     @media screen and ( min-width:800px) {
         display: none;
     }

@@ -17,7 +17,7 @@ const TestImonials = () => {
     if (num === 2) setState(0);
   };
   return (
-    <div className="testImonials">
+    <div className="testImonials" id="testimonilas">
       <div className="testImonials_left">
         {/*testImonials_left*/}
         <span>{TESTIMONIALS}</span>
@@ -57,7 +57,7 @@ const TestImonials = () => {
           alt="slide"
           className="testImonials_slide"
         />
-        
+
         {/*testImonials_arrows*/}
         <div className="testImonials_arrows">
           <img

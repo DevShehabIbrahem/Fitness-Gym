@@ -9,7 +9,7 @@ const Plans = () => {
   const { READY_TO_START, YOUR_JOURNEY, NOW_WITHUS } = words;
   return (
     <div>
-      <div className="plans_head">
+      <div className="plans_head" id="plans">
         <span className="stroke-text">{READY_TO_START}</span>
         <span>{YOUR_JOURNEY}</span>
         <span className="stroke-text">{NOW_WITHUS}</span>

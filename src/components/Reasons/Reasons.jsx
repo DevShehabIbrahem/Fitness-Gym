@@ -9,7 +9,7 @@ const Reasons = () => {
   const { CHOOSE_Us, SOME_REASONS, WHY } = words;
 
   return (
-    <div className="Reasons" id="reasons">
+    <div className="Reasons" id="why us">
       {/*Reasons_left*/}
       <div className="Reasons_left">
         {/*Grid images*/}

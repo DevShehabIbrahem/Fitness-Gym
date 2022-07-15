@@ -1,16 +1,34 @@
 import React from "react";
-import { words } from "../../words";
 import "../../css/mobileMenu/MobileMenu.css";
+import { Link } from "react-scroll";
 const MobileMenu = ({ show }) => {
-  const { Nav } = words;
-
   return (
     <ul className={show ? "showMenu" : "hideMenu"}>
-      {Nav.map((item) => (
-        <a href="##" key={item} className="text-[18px]">
-          <li>{item}</li>
-        </a>
-      ))}
+      <li>
+        <Link to="home" spy={true} smooth={true}>
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="programs" spy={true} smooth={true}>
+          Programs
+        </Link>
+      </li>
+      <li>
+        <Link to="why us" spy={true} smooth={true}>
+          Why Us
+        </Link>
+      </li>
+      <li>
+        <Link to="plans" spy={true} smooth={true}>
+          Plans
+        </Link>
+      </li>
+      <li>
+        <Link to="testimonilas" spy={true} smooth={true}>
+          Testimonilas
+        </Link>
+      </li>
     </ul>
   );
 };

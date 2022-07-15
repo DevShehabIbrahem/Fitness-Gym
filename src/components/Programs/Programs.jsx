@@ -8,7 +8,7 @@ const Programs = () => {
   const { EXPLORE_OUR, PROGRAMS, TO_SHAPE_YOU } = words;
 
   return (
-    <div className="programs">
+    <div className="programs" id="programs">
       <div className="programs_header">
         <span className="stroke-text">{EXPLORE_OUR}</span>
         <span>{PROGRAMS}</span>
