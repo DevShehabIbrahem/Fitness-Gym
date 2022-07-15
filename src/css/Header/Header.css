@@ -2,21 +2,40 @@
   display: flex;
   justify-content: space-between;
 }
-.header img {
-  width: 10rem;
-  height: 3rem;
-}
-.header ul {
+.header .list {
   display: flex;
   gap: 30px;
   list-style: none;
-  color: #fff;
   text-transform: capitalize;
+  color: #fff;
 }
-.header ul li {
-  transition: 0.2s all ease-in-out;
-}
-.header ul li:hover {
+.header .list li {
+  width: max-content;
+  padding: 5px;
+  text-transform: capitalize;
   cursor: pointer;
-  color: #f48915;
+  transition: 0.4s all ease-in-out;
+}
+.header .list li:hover {
+  color: #fbb403;
+}
+@media screen and (max-width: 800px) {
+  .header .list {
+    display: none;
+  }
+}
+.header .burger_menu {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .header .burger_menu {
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+.header img {
+  width: 10rem;
+  height: 3rem;
 }

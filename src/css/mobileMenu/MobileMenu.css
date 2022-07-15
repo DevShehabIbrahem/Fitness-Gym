@@ -1,0 +1,43 @@
+.showMenu {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: -2rem;
+  left: -3rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 50%;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  z-index: 100;
+}
+.showMenu a {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.345);
+  width: 100%;
+  text-decoration: none;
+}
+.showMenu a li {
+  width: max-content;
+  padding: 5px;
+  text-transform: capitalize;
+  color: rgb(90, 89, 89);
+  transition: 0.4s all ease-in-out;
+  margin-left: 2rem;
+}
+.showMenu a li:hover {
+  color: #fbb403;
+}
+@media screen and (min-width: 800px) {
+  .showMenu {
+    display: none;
+  }
+}
+
+.hideMenu {
+  display: none;
+}

@@ -3,24 +3,52 @@ $orange: #f48915;
 .header{
 display: flex;
 justify-content: space-between;
+
+
+.list{     
+    display: flex; 
+    gap: 30px;
+  
+    list-style: none;
+   
+    text-transform: capitalize;
+    color: #fff;
+       
+        li{
+            width: max-content;
+            padding: 5px;
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: .4s all ease-in-out;
+           
+            &:hover{
+                color: #fbb403;
+            }
+            
+        }
+        
+   @media screen and (max-width:800px) {
+    display: none;
+    
+   }
+}
+
+
+
+.burger_menu{
+    display: none;
+    @media screen and (max-width:800px) {
+        display: flex;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+}
+
     img{
         width: 10rem;
         height: 3rem;
         
     }
-    ul{
-        display: flex; 
-        gap: 30px;
-        list-style: none;
-        color: #fff;
-        text-transform: capitalize;
-        li{
-            transition: 0.2s all ease-in-out;
-            &:hover{
-                cursor: pointer;
-                color: $orange;
-
-            }
-        }
-    }
+ 
 }
