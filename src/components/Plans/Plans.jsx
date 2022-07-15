@@ -22,7 +22,7 @@ const Plans = () => {
       {/*features*/}
       <div className="plans-box">
         {plansData.map(({ features, name, price, icon }) => (
-          <div className="plans-content">
+          <div className="plans-content" key={name}>
             <span>{icon}</span>
             <h3>{name}</h3>
             <span>${price}</span>

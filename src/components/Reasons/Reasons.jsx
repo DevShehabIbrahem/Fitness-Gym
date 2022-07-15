@@ -29,7 +29,7 @@ const Reasons = () => {
 
         {/*checkPoint*/}
         {chooseUs.map(({ imgaeURL, dec }) => (
-          <div className="Reasons_tick">
+          <div className="Reasons_tick" key={dec}>
             <img src={imgaeURL} alt="" />
             <h3>{dec}</h3>
           </div>

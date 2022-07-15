@@ -1,14 +1,14 @@
 export const data = [
   {
-    num: "+ 140",
+    num: 140,
     dec: "EXPERT COACHES",
   },
   {
-    num: "+ 978",
+    num: 500,
     dec: "MEMBERS JOINED",
   },
   {
-    num: "+ 50",
+    num: 200,
     dec: "FITNESS PROGRAMS",
   },
 ];

@@ -3,7 +3,7 @@ import "../../css/HeroSection/Hero.css";
 import { data } from "../../data/data";
 import { words } from "../../words";
 import Header from "../Header/Header";
-
+import NumberCounter from "number-counter";
 import { RightSideImages } from "../../assets/Images";
 import { motion } from "framer-motion";
 
@@ -51,10 +51,17 @@ const HeroSection = () => {
 
         {/*figures*/}
         <div className="figures">
-          {data.map(({ num, dec }) => (
-            <div>
-              <span>{num}</span>
-              <span>{dec}</span>
+          {data.map((item, idx) => (
+            <div key={idx}>
+              <span>
+                <NumberCounter
+                  start={100}
+                  end={item.num}
+                  delay="3"
+                  preFix="+"
+                />
+              </span>
+              <span>{item.dec}</span>
             </div>
           ))}
         </div>
