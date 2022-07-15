@@ -4,7 +4,6 @@ import { useRef } from "react";
 import logo from "../../assets/logo.png";
 import "../../css/Header/Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { words } from "../../words";
 import { Link } from "react-scroll";
 
 const Header = () => {

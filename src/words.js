@@ -1,5 +1,4 @@
 export const words = {
-  Nav: ["home", "programs", "why us", "plans", "testimonilas"],
   best_fitness: "the best fitness club in the town",
   SHAPE: "SHAPE",
   IDEAL_body: "IDEAL BODY",
